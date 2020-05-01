@@ -1,0 +1,36 @@
+{% extends "profile.html" %}
+{% block content %}
+
+
+<ul class="nav nav-pills justify-content-center">
+
+  <li class="nav-item"><a class="nav-link" href="{{ url_for('profile') }}">Profile</a></li>
+  <li class="nav-item"><a class="nav-link active" href="{{ url_for('skills') }}">Skills</a></li>
+  <li class="nav-item"><a class="nav-link" href="{{ url_for('experience') }}">Experience</a></li>
+  <li class="nav-item"><a class="nav-link" href="{{ url_for('projects') }}">Projects</a></li>
+  <li class="nav-item"><a class="nav-link" href="{{ url_for('certifications') }}">Certifications</a></li>
+  <li class="nav-item"><a class="nav-link" href="{{ url_for('contact') }}">Contact</a></li>
+
+</ul>
+    <body>
+    <br>
+<div class="container bg-white text-black">
+
+
+    <ul class="list-group">
+        <br>
+        <li class="list-group-item active">RPA - UiPath | Web, Desktop, Citrix, Excel & Email Automation</li>
+        <br>
+        <li class="list-group-item active">Basic - Automation Anywhere & BluePrism</li>
+        <br>
+        <li class="list-group-item active">Python | GUI, Web-App, WebMaps, Scripting</li>
+        <br>
+        <li class="list-group-item active">SQL | Excel</li>
+        <br>
+        <li class="list-group-item active">Basic - HTML, CSS & JS</li>
+        <br>
+    </ul>
+</div>
+
+</body>
+{% endblock content %}

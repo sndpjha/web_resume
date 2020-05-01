@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sandeep Jha</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+
+    <style>
+        body {
+                background-image: url("https://picsum.photos/1920/1080");
+                  -webkit-background-size: cover;
+                  -moz-background-size: cover;
+                  -o-background-size: cover;
+                  background-size: cover;
+        }
+        ul{
+            background-color: #ffffff;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-radius: 25px;
+        }
+        div {
+            border-radius: 25px;
+            justify-content: center;
+            align-items: center;
+            vertical-align: middle;
+            border-radius: 25px;
+            font-family: sans-serif;
+
+        }
+        form {
+                margin: 0 auto;
+                text-align: center;
+                }
+
+        li.list-group-item{
+            border-radius: 25px;
+
+        }
+        .carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  outline: black;
+  background-size: 100%, 100%;
+  background-image: none;
+}
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 55px;
+  color: wheat;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color: wheat;
+}
+
+
+
+
+    </style>
+</head>
+
+{% block content %}
+
+
+
+<ul class="nav nav-pills justify-content-center">
+
+  <li class="nav-item"><a class="nav-link active" href="{{ url_for('profile') }}">Profile</a></li>
+  <li class="nav-item"><a class="nav-link" href="{{ url_for('skills') }}">Skills</a></li>
+  <li class="nav-item"><a class="nav-link" href="{{ url_for('experience') }}">Experience</a></li>
+  <li class="nav-item"><a class="nav-link" href="{{ url_for('projects') }}">Projects</a></li>
+  <li class="nav-item"><a class="nav-link" href="{{ url_for('certifications') }}">Certifications</a></li>
+  <li class="nav-item"><a class="nav-link" href="{{ url_for('contact') }}">Contact</a></li>
+
+</ul>
+    <body>
+    <br>
+<div class="container bg-white text-black">
+    <br>
+    <h1 style="text-align: center; font-weight: bold;">Hello! I am Sandeep Jha</h1>
+    <br>
+    <h2 style="text-align: center; font-weight: normal;">I am currently working as a Python & RPA Developer</h2>
+
+    <br>
+    <p>Inquisitive, organized, and goal-driven RPA Developer. Around 3 years of experience in working within projects in Financial, Goods and Health Service domains. Fast paced learner having automation experience of various industrial processes and popular tools.</p>
+    <br>
+    <br>
+    <br>
+    <br>
+    <p style="text-align: center; color: blue;">Click on the above navigation tabs to see other details</p>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <p style="text-align: center; " id="dowload" >Incase you liked my profile
+    <form method="get" action="static/resume/ResumeSJ.pdf" >
+        <button type="submit" class="btn btn-success" >Download My Resume</button>
+    </form>
+    </p>
+    <br>
+</div>
+</body>
+
+
+    <a href="https://www.freecounterstat.com" style="color: white">Total Visitors :<img src="https://counter11.stat.ovh/private/freecounterstat.php?c=6kyy7w3t1ksy9219p64nx8p9sp42uyxr" border="0" title="page view counter" alt="page view counter"></a>
+
+{% endblock %}
+</html>
+

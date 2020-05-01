@@ -1,0 +1,36 @@
+{% extends "profile.html" %}
+{% block content %}
+
+
+<ul class="nav nav-pills justify-content-center">
+
+  <li class="nav-item"><a class="nav-link" href="{{ url_for('profile') }}">Profile</a></li>
+  <li class="nav-item"><a class="nav-link" href="{{ url_for('skills') }}">Skills</a></li>
+  <li class="nav-item"><a class="nav-link" href="{{ url_for('experience') }}">Experience</a></li>
+  <li class="nav-item"><a class="nav-link active" href="{{ url_for('projects') }}">Python Projects</a></li>
+  <li class="nav-item"><a class="nav-link" href="{{ url_for('certifications') }}">Certifications</a></li>
+  <li class="nav-item"><a class="nav-link" href="{{ url_for('contact') }}">Contact</a></li>
+
+</ul>
+    <body>
+    <br>
+<div class="container bg-white text-black">
+
+
+    <ul class="list-group">
+        <br>
+        <li class="list-group-item active">Building an Interactive dictionary - Using json file Creating Web maps  with folium</li>
+        <br>
+        <li class="list-group-item active">Building website blocker - Using host file</li>
+        <br>
+        <li class="list-group-item active">Building a website with python and flask - using git, herokuapp, flask</li>
+        <br>
+        <li class="list-group-item active">Creating a tkinter book app with sqlite3 and tkinter - Making standalone executable file</li>
+        <br>
+        <li class="list-group-item active">Resizing, saving images using openCV Face-Detection using cascade xmls cv2 Building a motion detector app using cv2</li>
+        <br>
+    </ul>
+</div>
+
+</body>
+{% endblock content %}

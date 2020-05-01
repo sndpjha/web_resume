@@ -1,0 +1,31 @@
+{% extends "profile.html" %}
+{% block content %}
+
+
+<ul class="nav nav-pills justify-content-center">
+
+  <li class="nav-item"><a class="nav-link" href="{{ url_for('profile') }}">Profile</a></li>
+  <li class="nav-item"><a class="nav-link" href="{{ url_for('skills') }}">Skills</a></li>
+  <li class="nav-item"><a class="nav-link" href="{{ url_for('experience') }}">Experience</a></li>
+  <li class="nav-item"><a class="nav-link" href="{{ url_for('projects') }}">Projects</a></li>
+  <li class="nav-item"><a class="nav-link" href="{{ url_for('certifications') }}">Certifications</a></li>
+  <li class="nav-item"><a class="nav-link active" href="{{ url_for('contact') }}">Contact</a></li>
+
+</ul>
+    <body>
+    <br>
+<div class="container bg-white text-black">
+    <br>
+    <p style="text-align: center; " id="dowload" >Incase you liked this
+    <form method="get" action="static/resume/ResumeSJ.pdf" >
+        <button type="submit" class="btn btn-success" >Download My Resume</button>
+    </form>
+    <br>
+    <form method="get" action="https://www.linkedin.com/in/jhasndp/" >
+        <button type="submit" class="btn btn-info" >Visit My LinkedIn Profile</button>
+    </form>
+    </p>
+    <br>
+
+</body>
+{% endblock content %}
